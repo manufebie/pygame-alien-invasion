@@ -11,6 +11,8 @@ from ship import Ship
 def run_game():
     # initialize game and create a screen object
     pygame.init()
+    pygame.mixer.music.load('sounds/crossing_the_chasm.mp3')
+    pygame.mixer.music.play(-1)
     ai_settings = Settings() # Settings instance
     screen = pygame.display.set_mode(
         (ai_settings.screen_width, ai_settings.screen_height))
